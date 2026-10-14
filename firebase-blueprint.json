@@ -1,0 +1,98 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profile",
+      "description": "Stores user profile information, preferences, and assessment results",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "description": "Unique identifier for the user" },
+        "email": { "type": "string", "format": "email", "description": "User's email address" },
+        "displayName": { "type": "string", "description": "User's display name" },
+        "photoURL": { "type": "string", "description": "URL to user's profile photo" },
+        "role": { "type": "string", "enum": ["student", "teacher", "admin"], "description": "User's role in the system" },
+        "userCode": { "type": "string", "description": "Unique code for the user (e.g., HS-1234, GV-5678)" },
+        "isBanned": { "type": "boolean", "description": "Whether the user is banned from the system" },
+        "lastLogin": { "type": "string", "format": "date-time", "description": "When the user last logged in" },
+        "lastResult": {
+          "type": "object",
+          "properties": {
+            "careerName": { "type": "string" },
+            "matchPercentage": { "type": "number" },
+            "summary": { "type": "string" },
+            "reasons": { "type": "array", "items": { "type": "string" } },
+            "timestamp": { "type": "string", "format": "date-time" },
+            "topCareers": { "type": "array" },
+            "contingencyPlans": { "type": "array" },
+            "skillsToDevelop": { "type": "array" },
+            "overallSummary": { "type": "string" },
+            "assessmentData": { "type": "object" },
+            "mbti": { "type": "string" },
+            "holland": { "type": "string" },
+            "gpa": { "type": "number" },
+            "interests": { "type": "array" },
+            "subjects": { "type": "object" }
+          }
+        }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "classes": {
+      "title": "Class",
+      "description": "Represents a class managed by a teacher",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string", "description": "Name of the class" },
+        "teacherId": { "type": "string", "description": "UID of the teacher who owns the class" },
+        "coTeacherIds": { "type": "array", "items": { "type": "string" }, "description": "List of co-teacher UIDs in the class" },
+        "studentIds": { "type": "array", "items": { "type": "string" }, "description": "List of student UIDs in the class" },
+        "pendingStudentIds": { "type": "array", "items": { "type": "string" }, "description": "List of student UIDs invited to the class" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["name", "teacherId"]
+    },
+    "counters": {
+      "title": "Counter",
+      "description": "Atomic counters for generating unique IDs",
+      "type": "object",
+      "properties": {
+        "count": { "type": "number", "description": "Current count value" }
+      },
+      "required": ["count"]
+    },
+    "feedbacks": {
+      "title": "Feedback",
+      "description": "Communication between user and teacher/AI",
+      "type": "object",
+      "properties": {
+        "senderId": { "type": "string" },
+        "senderName": { "type": "string" },
+        "text": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "isTeacher": { "type": "boolean" }
+      },
+      "required": ["senderId", "senderName", "text"]
+    }
+  },
+  "firestore": {
+    "/users/{uid}": {
+      "schema": "users",
+      "description": "User profile document"
+    },
+    "/users/{uid}/feedbacks/{feedbackId}": {
+      "schema": "feedbacks",
+      "description": "Feedback messages for a user"
+    },
+    "/classes/{classId}": {
+      "schema": "classes",
+      "description": "Class document"
+    },
+    "/counters/{role}": {
+      "schema": "counters",
+      "description": "Role-based counters for user codes"
+    },
+    "/test/connection": {
+      "schema": { "type": "object", "properties": {} },
+      "description": "Connection test document"
+    }
+  }
+}

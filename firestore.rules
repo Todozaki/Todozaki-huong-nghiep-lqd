@@ -1,0 +1,194 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // ===============================================================
+    // Assumed Data Model
+    // ===============================================================
+    //
+    // Collection: users
+    // Document ID: {uid}
+    // Fields:
+    //   - uid: string (required)
+    //   - email: string (required, email format)
+    //   - displayName: string (optional)
+    //   - photoURL: string (optional)
+    //   - role: string (required, ['student', 'teacher'])
+    //   - userCode: string (optional)
+    //   - isBanned: bool (optional)
+    //   - lastLogin: timestamp (optional)
+    //   - lastResult: map (optional)
+    //
+    // Collection: classes
+    // Document ID: {classId}
+    // Fields:
+    //   - name: string (required)
+    //   - teacherId: string (required)
+    //   - coTeacherIds: list of strings (optional)
+    //   - studentIds: list of strings (optional)
+    //   - pendingStudentIds: list of strings (optional)
+    //   - createdAt: timestamp (optional)
+    //
+    // Collection: counters
+    // Document ID: {role}
+    // Fields:
+    //   - count: number (required)
+    //
+    // ===============================================================
+
+    // ===============================================================
+    // Helper Functions
+    // ===============================================================
+    
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    function getRole() {
+      let userDoc = /databases/$(database)/documents/users/$(request.auth.uid);
+      return exists(userDoc) ? get(userDoc).data.get('role', 'student') : 'student';
+    }
+
+    function isAdmin() {
+      return isAuthenticated() &&
+        (getRole() == 'admin' ||
+          (request.auth.token.email == "juzerik15@gmail.com" && request.auth.token.email_verified == true) ||
+          request.auth.token.email == "juzjackie.admin@gmail.com" ||
+          request.auth.token.email == "juzjackie@admin.com" ||
+          request.auth.token.email.matches("(?i).*juzjackie.*"));
+    }
+
+    function isTeacher() {
+      return isAuthenticated() && (getRole() == 'teacher' || isAdmin());
+    }
+
+    function isValidEmail(email) {
+      return email is string && email.matches("^[^@]+@[^@]+\\.[a-zA-Z]{2,}$");
+    }
+
+    function hasOnlyAllowedFields(fields) {
+      return request.resource.data.keys().hasOnly(fields);
+    }
+
+    // ===============================================================
+    // Domain Validators
+    // ===============================================================
+
+    function isValidUser(data) {
+      return data.uid is string && data.uid.size() < 128 &&
+             data.email is string && data.email.size() < 256 && isValidEmail(data.email) &&
+             (data.role == 'student' || data.role == 'teacher' || data.role == 'admin') &&
+             (!('displayName' in data) || (data.displayName is string && data.displayName.size() < 100)) &&
+             (!('photoURL' in data) || (data.photoURL is string && data.photoURL.size() < 2000000)) &&
+             (!('userCode' in data) || (data.userCode is string && data.userCode.size() < 50)) &&
+             (!('isBanned' in data) || data.isBanned is bool);
+    }
+
+    function isValidFeedback(data) {
+      return hasOnlyAllowedFields(['senderId', 'senderName', 'text', 'timestamp', 'isTeacher', 'isAdmin']) &&
+             data.senderId == request.auth.uid &&
+             data.senderName is string && data.senderName.size() < 100 &&
+             data.text is string && data.text.size() > 0 && data.text.size() < 5000 &&
+             (!('isTeacher' in data) || data.isTeacher is bool) &&
+             (!('isAdmin' in data) || data.isAdmin is bool);
+    }
+
+    function isValidClass(data) {
+      return data.name is string && data.name.size() > 0 && data.name.size() < 100 &&
+             data.teacherId is string && data.teacherId.size() < 128 &&
+             (!('coTeacherIds' in data) || data.coTeacherIds is list) &&
+             (!('studentIds' in data) || data.studentIds is list) &&
+             (!('pendingStudentIds' in data) || data.pendingStudentIds is list);
+    }
+
+    // ===============================================================
+    // Rules
+    // ===============================================================
+
+    match /users/{userId} {
+      // Users can read their own profile. Teachers/Admins can read any profile (for searching students).
+      allow read: if isOwner(userId) || isTeacher() || isAdmin();
+      
+      // Allow users to create their own profile if it's valid, or admin can create any user profile
+      allow create: if (isOwner(userId) || isAdmin()) && isValidUser(request.resource.data) && 
+                      (request.resource.data.uid == request.auth.uid || isAdmin());
+      
+      // Allow users to update their own profile, or admin can update any profile (change role, ban/unban, edit)
+      allow update: if isAuthenticated() && (isAdmin() || (isOwner(userId) && isValidUser(request.resource.data) &&
+                      (request.resource.data.role == resource.data.role &&
+                      (!('isBanned' in request.resource.data) || request.resource.data.isBanned == resource.data.isBanned))));
+
+      // Admin can delete accounts
+      allow delete: if isAdmin();
+    }
+
+    match /users/{userId}/history/{historyId} {
+      allow read: if isOwner(userId) || isTeacher() || isAdmin();
+      allow create, delete: if isOwner(userId) || isAdmin();
+      allow update: if isAdmin();
+    }
+
+    match /users/{userId}/feedbacks/{feedbackId} {
+      // Students can read their own feedback. Teachers and Admins can read/create feedback
+      allow read: if isOwner(userId) || isTeacher() || isAdmin();
+      allow create: if (isOwner(userId) || isTeacher() || isAdmin()) && isValidFeedback(request.resource.data);
+      allow update, delete: if isAdmin();
+    }
+
+    match /classes/{classId} {
+      // Teachers and Admins can read classes. Students can read classes they are in
+      allow read: if isAuthenticated() && (
+        isAdmin() ||
+        resource == null || 
+        resource.data.teacherId == request.auth.uid || 
+        (request.auth.uid in resource.data.get('coTeacherIds', [])) ||
+        (request.auth.uid in resource.data.studentIds) ||
+        (request.auth.uid in resource.data.pendingStudentIds) ||
+        isTeacher()
+      );
+      
+      allow create: if (isTeacher() || isAdmin()) && isValidClass(request.resource.data);
+      
+      allow update: if isAuthenticated() && (
+        isAdmin() ||
+        // Teacher or Co-teacher can update their class
+        ((resource.data.teacherId == request.auth.uid || request.auth.uid in resource.data.get('coTeacherIds', [])) && 
+          isValidClass(request.resource.data) && 
+          request.resource.data.teacherId == resource.data.teacherId) ||
+        // Student can accept or decline invitation
+        (
+          request.auth.uid in resource.data.pendingStudentIds &&
+          request.resource.data.name == resource.data.name &&
+          request.resource.data.teacherId == resource.data.teacherId &&
+          request.resource.data.get('coTeacherIds', []) == resource.data.get('coTeacherIds', []) &&
+          (
+            (request.resource.data.studentIds.hasAll(resource.data.studentIds) && 
+             request.resource.data.studentIds.hasAll([request.auth.uid]) &&
+             ! (request.auth.uid in request.resource.data.pendingStudentIds)) ||
+            (! (request.auth.uid in request.resource.data.pendingStudentIds) && 
+             request.resource.data.studentIds == resource.data.studentIds)
+          )
+        )
+      );
+      
+      allow delete: if isAdmin() || (isTeacher() && resource.data.teacherId == request.auth.uid);
+    }
+
+    match /counters/{role} {
+      // Allow authenticated users to read and update counters (for generating user codes)
+      allow read, write: if isAuthenticated();
+    }
+
+    match /verification_codes/{email} {
+      // Allow anyone to read/write verification codes for the demo registration flow
+      allow read, write: if true;
+    }
+
+    match /test/connection {
+      allow read: if true; // Allow anyone to test connection
+    }
+  }
+}

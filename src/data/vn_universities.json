@@ -1,0 +1,767 @@
+[
+  {
+    "rank": 1,
+    "name": "Đại học Quốc gia Hà Nội",
+    "score": 100,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2025/07/Logo-DH-Quoc-Gia-Ha-Noi-VNU.webp",
+    "strengths": [
+      "Khoa học cơ bản",
+      "Công nghệ",
+      "Ngoại ngữ",
+      "Khoa học Xã hội"
+    ],
+    "tuition_range": "15 - 35 triệu/năm"
+  },
+  {
+    "rank": 2,
+    "name": "Đại học Quốc gia TP. Hồ Chí Minh",
+    "score": 99.25,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Đa Ngành",
+    "logo": "https://upload.wikimedia.org/wikipedia/vi/thumb/f/fb/VNUHCM_logo.svg/1200px-VNUHCM_logo.svg.png",
+    "strengths": [
+      "Khoa học Máy tính",
+      "Bách Khoa",
+      "Kinh tế",
+      "Khoa học Tự nhiên"
+    ],
+    "tuition_range": "15 - 50 triệu/năm"
+  },
+  {
+    "rank": 3,
+    "name": "Đại học Bách khoa Hà Nội",
+    "score": 87.84,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Kỹ thuật",
+    "logo": "https://hust.edu.vn/uploads/sys/logo-dhbk-1-02_130_191.png",
+    "strengths": [
+      "Kỹ thuật Công nghệ",
+      "Trí tuệ Nhân tạo",
+      "Tự động hóa",
+      "Điện tử Viễn thông"
+    ],
+    "tuition_range": "24 - 35 triệu/năm"
+  },
+  {
+    "rank": 4,
+    "name": "Đại học Kinh tế TP. Hồ Chí Minh (UEH)",
+    "score": 74.94,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Kinh tế",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/6.Kinh-te-TP.HCM_.jpg",
+    "strengths": [
+      "Kinh doanh",
+      "Quản lý",
+      "Tài chính",
+      "Marketing số"
+    ],
+    "tuition_range": "35 - 80 triệu/năm"
+  },
+  {
+    "rank": 5,
+    "name": "Đại học Tôn Đức Thắng",
+    "score": 73.23,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Đa Ngành",
+    "logo": "https://www.tdtu.edu.vn/sites/www/files/logo/logo-tdt-new.png",
+    "strengths": [
+      "Kinh tế",
+      "Kỹ thuật phần mềm",
+      "Mỹ thuật công nghiệp",
+      "Ngoại ngữ"
+    ],
+    "tuition_range": "25 - 50 triệu/năm"
+  },
+  {
+    "rank": 6,
+    "name": "Đại học Khoa học và Công nghệ Hà Nội",
+    "score": 69.21,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2024/01/Logo-Truong-Dai-hoc-Khoa-hoc-va-Cong-nghe-Ha-Noi-VN-France-University.webp",
+    "strengths": [
+      "Công nghệ Sinh học",
+      "Công nghệ thông tin",
+      "Khoa học Vật liệu"
+    ],
+    "tuition_range": "40 - 50 triệu/năm"
+  },
+  {
+    "rank": 7,
+    "name": "Đại học Duy Tân",
+    "score": 66.17,
+    "type": "Tư thục",
+    "region": "Thành phố Đà Nẵng",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2025/07/logoDT-70.webp",
+    "strengths": [
+      "Du lịch Khách sạn",
+      "Công nghệ thông tin",
+      "Quản trị kinh doanh"
+    ],
+    "tuition_range": "30 - 60 triệu/năm"
+  },
+  {
+    "rank": 8,
+    "name": "Đại học Cần Thơ",
+    "score": 65.09,
+    "type": "Công lập",
+    "region": "Thành phố Cần Thơ",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/7.Can-Tho.jpg",
+    "strengths": [
+      "Nông nghiệp",
+      "Thủy sản",
+      "Môi trường",
+      "Công nghệ"
+    ],
+    "tuition_range": "15 - 30 triệu/năm"
+  },
+  {
+    "rank": 9,
+    "name": "Đại học Đà Nẵng",
+    "score": 64.83,
+    "type": "Công lập",
+    "region": "Thành phố Đà Nẵng",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/9.Da-Nang.jpg",
+    "strengths": [
+      "Kinh tế",
+      "Bách Khoa",
+      "Ngoại ngữ",
+      "Sư phạm"
+    ],
+    "tuition_range": "15 - 35 triệu/năm"
+  },
+  {
+    "rank": 10,
+    "name": "Đại học Thương Mại",
+    "score": 63.73,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Kinh tế",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/32.Thuong-mai.jpg",
+    "strengths": [
+      "Thương mại điện tử",
+      "Marketing",
+      "Logistics",
+      "Kế toán"
+    ],
+    "tuition_range": "23 - 25 triệu/năm"
+  },
+  {
+    "rank": 11,
+    "name": "Đại học Kinh tế Quốc dân",
+    "score": 63.63,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Kinh tế",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/21.Kinh-te-Quoc-dan.jpg",
+    "strengths": [
+      "Quản trị Kinh doanh",
+      "Tài chính Ngân hàng",
+      "Kế toán",
+      "Kinh tế quốc tế"
+    ],
+    "tuition_range": "20 - 65 triệu/năm"
+  },
+  {
+    "rank": 12,
+    "name": "Đại học Công nghiệp TP. Hồ Chí Minh",
+    "score": 63.27,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/11.Cong-nghiep-TP.HCM_.jpg",
+    "strengths": [
+      "Cơ khí",
+      "Điện tử",
+      "Công nghệ thông tin",
+      "Kinh tế"
+    ],
+    "tuition_range": "25 - 35 triệu/năm"
+  },
+  {
+    "rank": 13,
+    "name": "Đại học Sư phạm Hà Nội",
+    "score": 61.21,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Sư phạm",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/8.Su-pham-Ha-Noi.jpg",
+    "strengths": [
+      "Sư phạm Toán",
+      "Sư phạm Ngữ Văn",
+      "Tâm lý học giáo dục"
+    ],
+    "tuition_range": "Miễn học phí (hệ Sư phạm)"
+  },
+  {
+    "rank": 14,
+    "name": "Đại học Huế",
+    "score": 60.84,
+    "type": "Công lập",
+    "region": "Thành phố Huế",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/10.Hue_.jpg",
+    "strengths": [
+      "Y Dược",
+      "Sư phạm",
+      "Kinh tế",
+      "Ngoại ngữ"
+    ],
+    "tuition_range": "15 - 45 triệu/năm"
+  },
+  {
+    "rank": 15,
+    "name": "Đại học Thái Nguyên",
+    "score": 59.61,
+    "type": "Công lập",
+    "region": "Thái Nguyên",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/17.Thai-Nguyen.jpg",
+    "strengths": [
+      "Nông lâm",
+      "Y Dược",
+      "Công nghệ thông tin"
+    ],
+    "tuition_range": "15 - 30 triệu/năm"
+  },
+  {
+    "rank": 16,
+    "name": "Đại học Nguyễn Tất Thành",
+    "score": 59.44,
+    "type": "Tư thục",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/19.Nguyen-Tat-Thanh.jpg",
+    "strengths": [
+      "Y Dược",
+      "Du lịch",
+      "Công nghệ Kỹ thuật"
+    ],
+    "tuition_range": "35 - 130 triệu/năm"
+  },
+  {
+    "rank": 17,
+    "name": "Học viện Nông nghiệp Việt Nam",
+    "score": 58.95,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Nông - Lâm",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/16.Hoc-vien-Nong-nghiep.jpg",
+    "strengths": [
+      "Nông nghiệp",
+      "Thú y",
+      "Công nghệ thực phẩm"
+    ],
+    "tuition_range": "15 - 25 triệu/năm"
+  },
+  {
+    "rank": 18,
+    "name": "Đại học Công nghiệp Hà Nội",
+    "score": 58.64,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Kỹ thuật, Công nghệ",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/23.Cong-nghiep-Ha-Noi.jpg",
+    "strengths": [
+      "Cơ khí",
+      "Tự động hóa",
+      "Điện tử",
+      "Kinh tế"
+    ],
+    "tuition_range": "20 - 25 triệu/năm"
+  },
+  {
+    "rank": 19,
+    "name": "Đại học Vinh",
+    "score": 58.15,
+    "type": "Công lập",
+    "region": "Nghệ An",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/27.Vinh_.jpg",
+    "strengths": [
+      "Sư phạm",
+      "Kinh tế",
+      "Kỹ thuật"
+    ],
+    "tuition_range": "15 - 20 triệu/năm"
+  },
+  {
+    "rank": 20,
+    "name": "Đại học Thuỷ Lợi",
+    "score": 57.81,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/12.Thuy-loi.jpg",
+    "strengths": [
+      "Kỹ thuật Xây dựng",
+      "Tài nguyên nước",
+      "Công nghệ thông tin"
+    ],
+    "tuition_range": "20 - 25 triệu/năm"
+  },
+  {
+    "rank": 21,
+    "name": "Đại học Văn Lang",
+    "score": 56.89,
+    "type": "Tư thục",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/50.Van-Lang.jpg",
+    "strengths": [
+      "Kiến trúc",
+      "Thiết kế",
+      "Truyền thông",
+      "Kinh doanh"
+    ],
+    "tuition_range": "40 - 60 triệu/năm"
+  },
+  {
+    "rank": 22,
+    "name": "Đại học Ngoại Thương",
+    "score": 56.22,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Kinh tế, Tài chính",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/13.Ngoai-Thuong.jpg",
+    "strengths": [
+      "Kinh tế Đối ngoại",
+      "Quản trị Kinh doanh",
+      "Logistics"
+    ],
+    "tuition_range": "25 - 60 triệu/năm"
+  },
+  {
+    "rank": 23,
+    "name": "Đại học Quy Nhơn",
+    "score": 55.94,
+    "type": "Công lập",
+    "region": "Gia Lai (Cơ sở) / Bình Định",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/18.Quy-Nhon.png",
+    "strengths": [
+      "Sư phạm",
+      "Khoa học tự nhiên",
+      "Kinh tế"
+    ],
+    "tuition_range": "15 - 20 triệu/năm"
+  },
+  {
+    "rank": 24,
+    "name": "Đại học Giao thông Vận tải",
+    "score": 55.88,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/36.Giao-thong-van-tai.jpg",
+    "strengths": [
+      "Kỹ thuật Xây dựng Cầu đường",
+      "Kinh tế Vận tải",
+      "Công nghệ thông tin"
+    ],
+    "tuition_range": "20 - 30 triệu/năm"
+  },
+  {
+    "rank": 25,
+    "name": "Học viện Ngân hàng",
+    "score": 55.38,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Kinh tế",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/47.Hoc-vien-Ngan-hang.jpg",
+    "strengths": [
+      "Tài chính Ngân hàng",
+      "Kế toán",
+      "Kinh doanh Quốc tế"
+    ],
+    "tuition_range": "20 - 25 triệu/năm"
+  },
+  {
+    "rank": 26,
+    "name": "Đại học Sư phạm Hà Nội 2",
+    "score": 55.29,
+    "type": "Công lập",
+    "region": "Phú Thọ (Cơ sở chính tại Vĩnh Phúc)",
+    "category": "Sư phạm",
+    "logo": "https://vnur.vn/wp-content/uploads/2024/01/Su_pham_HN2.jpg",
+    "strengths": [
+      "Sư phạm Giáo dục mầm non",
+      "Sư phạm Toán học",
+      "Sư phạm Ngữ văn"
+    ],
+    "tuition_range": "Miễn học phí (hệ Sư phạm)"
+  },
+  {
+    "rank": 27,
+    "name": "Đại học Mỏ - Địa chất",
+    "score": 55.29,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/22.Mo-Dia-chat.jpg",
+    "strengths": [
+      "Kỹ thuật Dầu khí",
+      "Địa chất học",
+      "Kỹ thuật Trắc địa - Bản đồ"
+    ],
+    "tuition_range": "15 - 20 triệu/năm"
+  },
+  {
+    "rank": 28,
+    "name": "Đại học Sư phạm TP. Hồ Chí Minh",
+    "score": 55.21,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Sư phạm",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/53.Su-pham-TP.HCM_.png",
+    "strengths": [
+      "Sư phạm tiếng Anh",
+      "Tâm lý học",
+      "Ngôn ngữ học"
+    ],
+    "tuition_range": "Miễn học phí (hệ Sư phạm)"
+  },
+  {
+    "rank": 29,
+    "name": "Đại học Dược Hà Nội",
+    "score": 54.79,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Sức khỏe",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/20.Duoc-Ha-Noi.jpg",
+    "strengths": [
+      "Dược học",
+      "Hóa dược",
+      "Công nghệ Sinh học"
+    ],
+    "tuition_range": "20 - 25 triệu/năm"
+  },
+  {
+    "rank": 30,
+    "name": "Đại học Xây dựng Hà Nội",
+    "score": 54.77,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Xây dựng - Kiến trúc",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/14.Xay-dung-Ha-Noi.jpg",
+    "strengths": [
+      "Kỹ thuật Xây dựng",
+      "Kiến trúc",
+      "Vật liệu Xây dựng"
+    ],
+    "tuition_range": "20 - 25 triệu/năm"
+  },
+  {
+    "rank": 31,
+    "name": "Đại học Mở TP. Hồ Chí Minh",
+    "score": 54.66,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/60.Mo-TP.HCM_.jpg",
+    "strengths": [
+      "Kinh tế",
+      "Ngoại ngữ",
+      "Luật Kinh tế",
+      "Quản trị Kinh doanh"
+    ],
+    "tuition_range": "20 - 30 triệu/năm"
+  },
+  {
+    "rank": 32,
+    "name": "Học viện Tài chính",
+    "score": 54.63,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Kinh tế, Tài chính",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/87.Hoc-vien-Tai-chinh.png",
+    "strengths": [
+      "Tài chính - Ngân hàng",
+      "Kế toán",
+      "Hải quan"
+    ],
+    "tuition_range": "20 - 25 triệu/năm"
+  },
+  {
+    "rank": 33,
+    "name": "Đại học Công nghệ TP. Hồ Chí Minh (HUTECH)",
+    "score": 54.62,
+    "type": "Tư thục",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/35.HUTECH.jpg",
+    "strengths": [
+      "Công nghệ Thông tin",
+      "Quản trị Kinh doanh",
+      "Truyền thông Đa phương tiện"
+    ],
+    "tuition_range": "35 - 50 triệu/năm"
+  },
+  {
+    "rank": 34,
+    "name": "Đại học Hồng Đức",
+    "score": 53.83,
+    "type": "Công lập",
+    "region": "Thanh Hoá",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/24.Hong-Duc.jpg",
+    "strengths": [
+      "Sư phạm",
+      "Kinh tế",
+      "Kỹ thuật"
+    ],
+    "tuition_range": "15 - 20 triệu/năm"
+  },
+  {
+    "rank": 35,
+    "name": "Đại học Y Dược Cần Thơ",
+    "score": 53.42,
+    "type": "Công lập",
+    "region": "Thành phố Cần Thơ",
+    "category": "Sức khỏe",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Logo_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_Y_D%C6%B0%E1%BB%A3c_C%E1%BA%A7n_Th%C6%A1.gif",
+    "strengths": [
+      "Y đa khoa",
+      "Dược học",
+      "Răng Hàm Mặt"
+    ],
+    "tuition_range": "30 - 45 triệu/năm"
+  },
+  {
+    "rank": 36,
+    "name": "Đại học Luật Hà Nội",
+    "score": 53.32,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Pháp luật",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/59.Luat-Ha-Noi.jpg",
+    "strengths": [
+      "Luật học",
+      "Luật Kinh tế",
+      "Luật Thương mại Quốc tế"
+    ],
+    "tuition_range": "20 - 25 triệu/năm"
+  },
+  {
+    "rank": 37,
+    "name": "Đại học Nam Cần Thơ",
+    "score": 53.06,
+    "type": "Tư thục",
+    "region": "Thành phố Cần Thơ",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/91.Nam-Can-Tho-1.jpg",
+    "strengths": [
+      "Y Dược",
+      "Kinh tế",
+      "Công nghệ Kỹ thuật"
+    ],
+    "tuition_range": "25 - 40 triệu/năm"
+  },
+  {
+    "rank": 38,
+    "name": "Đại học Sư phạm Kỹ thuật TP. Hồ Chí Minh",
+    "score": 52.99,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Kỹ thuật, Công nghệ",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/28.Su-pham-Ky-thuat-TP.HCM_.jpg",
+    "strengths": [
+      "Cơ khí",
+      "Điện - Điện tử",
+      "Công nghệ Thông tin",
+      "Công nghệ Ô tô"
+    ],
+    "tuition_range": "25 - 35 triệu/năm"
+  },
+  {
+    "rank": 39,
+    "name": "Học viện Báo chí và Tuyên truyền",
+    "score": 52.83,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Hành chính",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/34.Hoc-vien-Bao-chi-Tuyen-truyen.jpg",
+    "strengths": [
+      "Báo chí",
+      "Truyền thông đại chúng",
+      "Quan hệ công chúng"
+    ],
+    "tuition_range": "15 - 25 triệu/năm"
+  },
+  {
+    "rank": 40,
+    "name": "Đại học Ngân hàng TP. Hồ Chí Minh",
+    "score": 52.5,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Kinh tế, Tài chính",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/58.DH-Ngan-hang-TP.HCM_.jpg",
+    "strengths": [
+      "Tài chính - Ngân hàng",
+      "Kế toán",
+      "Hệ thống thông tin quản lý"
+    ],
+    "tuition_range": "20 - 30 triệu/năm"
+  },
+  {
+    "rank": 41,
+    "name": "Đại học Luật TP. Hồ Chí Minh",
+    "score": 52.15,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Pháp luật",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/83.Luat-TP.HCM_.jpg",
+    "strengths": [
+      "Luật Thương mại",
+      "Luật Dân sự",
+      "Luật Hình sự"
+    ],
+    "tuition_range": "25 - 35 triệu/năm"
+  },
+  {
+    "rank": 42,
+    "name": "Đại học Văn hoá Hà Nội",
+    "score": 52,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Văn hóa",
+    "logo": "https://vnur.vn/wp-content/uploads/2026/01/DH-van-hoa-Ha-Noi.png",
+    "strengths": [
+      "Quản lý văn hóa",
+      "Du lịch",
+      "Báo chí"
+    ],
+    "tuition_range": "15 - 20 triệu/năm"
+  },
+  {
+    "rank": 43,
+    "name": "Đại học Hàng hải Việt Nam",
+    "score": 51.5,
+    "type": "Công lập",
+    "region": "Thành phố Hải Phòng",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/44.Hang-hai-Viet-Nam.jpg",
+    "strengths": [
+      "Hàng hải",
+      "Kinh tế biển",
+      "Logistics"
+    ],
+    "tuition_range": "15 - 25 triệu/năm"
+  },
+  {
+    "rank": 44,
+    "name": "Đại học Nha Trang",
+    "score": 51.47,
+    "type": "Công lập",
+    "region": "Khánh Hoà",
+    "category": "Đa Ngành",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Nha_Trang_University_Seal.png",
+    "strengths": [
+      "Thủy sản",
+      "Du lịch",
+      "Kinh tế biển"
+    ],
+    "tuition_range": "15 - 20 triệu/năm"
+  },
+  {
+    "rank": 45,
+    "name": "Đại học Y Hà Nội",
+    "score": 51.26,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Sức khỏe",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/29.Y-Ha-Noi.jpg",
+    "strengths": [
+      "Y khoa",
+      "Răng Hàm Mặt",
+      "Y học Cổ truyền"
+    ],
+    "tuition_range": "30 - 60 triệu/năm"
+  },
+  {
+    "rank": 46,
+    "name": "Học viện Ngoại giao",
+    "score": 51.15,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Hành chính",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/31.Hoc-vien-Ngoai-giao.jpg",
+    "strengths": [
+      "Quan hệ Quốc tế",
+      "Truyền thông Quốc tế",
+      "Luật Quốc tế"
+    ],
+    "tuition_range": "20 - 45 triệu/năm"
+  },
+  {
+    "rank": 47,
+    "name": "Đại học Công đoàn",
+    "score": 51.06,
+    "type": "Công lập",
+    "region": "Thành phố Hà Nội",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/46.Cong-Doan.jpg",
+    "strengths": [
+      "Quan hệ lao động",
+      "Quản trị Nhân lực",
+      "Luật"
+    ],
+    "tuition_range": "15 - 20 triệu/năm"
+  },
+  {
+    "rank": 48,
+    "name": "Đại học Đồng Tháp",
+    "score": 50.72,
+    "type": "Công lập",
+    "region": "Đồng Tháp",
+    "category": "Đa Ngành",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/69.Dong-Thap.jpg",
+    "strengths": [
+      "Sư phạm",
+      "Nông nghiệp",
+      "Kinh tế"
+    ],
+    "tuition_range": "15 - 20 triệu/năm"
+  },
+  {
+    "rank": 49,
+    "name": "Đại học Y Dược TP. Hồ Chí Minh",
+    "score": 50.56,
+    "type": "Công lập",
+    "region": "Thành phố Hồ Chí Minh",
+    "category": "Sức khỏe",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/51.Y-duoc-TP.HCM_.jpg",
+    "strengths": [
+      "Y đa khoa",
+      "Dược học",
+      "Răng Hàm Mặt"
+    ],
+    "tuition_range": "40 - 80 triệu/năm"
+  },
+  {
+    "rank": 50,
+    "name": "Đại học Kinh tế Kỹ thuật công nghiệp",
+    "score": 50.56,
+    "type": "Công lập",
+    "region": "Hà Nội & Nam Định",
+    "category": "Kỹ thuật, Công nghệ",
+    "logo": "https://vnur.vn/wp-content/uploads/2023/01/19.Kinh-te-Ky-thuat-Cong-nghiep.jpg",
+    "strengths": [
+      "Kế toán",
+      "Công nghệ kỹ thuật điện, điện tử",
+      "Quản trị kinh doanh"
+    ],
+    "tuition_range": "15 - 25 triệu/năm"
+  }
+]

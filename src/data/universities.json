@@ -1,0 +1,1202 @@
+[
+  {
+    "rank": 1,
+    "name": "Massachusetts Institute of Technology (MIT)",
+    "country": "United States of America",
+    "score": 100,
+    "academic": 100,
+    "employer": 100
+  },
+  {
+    "rank": 2,
+    "name": "Imperial College London",
+    "country": "United Kingdom",
+    "score": 99.4,
+    "academic": 99.6,
+    "employer": 100
+  },
+  {
+    "rank": 3,
+    "name": "Stanford University",
+    "country": "United States of America",
+    "score": 98.9,
+    "academic": 100,
+    "employer": 100
+  },
+  {
+    "rank": 4,
+    "name": "University of Oxford",
+    "country": "United Kingdom",
+    "score": 97.9,
+    "academic": 100,
+    "employer": 100
+  },
+  {
+    "rank": 5,
+    "name": "Harvard University",
+    "country": "United States of America",
+    "score": 97.7,
+    "academic": 100,
+    "employer": 100
+  },
+  {
+    "rank": 6,
+    "name": "University of Cambridge",
+    "country": "United Kingdom",
+    "score": 97.2,
+    "academic": 100,
+    "employer": 100
+  },
+  {
+    "rank": 7,
+    "name": "ETH Zurich (Swiss Federal Institute of Technology)",
+    "country": "Switzerland",
+    "score": 96.7,
+    "academic": 99.7,
+    "employer": 96.3
+  },
+  {
+    "rank": 8,
+    "name": "National University of Singapore (NUS)",
+    "country": "Singapore",
+    "score": 95.9,
+    "academic": 99.9,
+    "employer": 98.2
+  },
+  {
+    "rank": 9,
+    "name": "UCL (University College London)",
+    "country": "United Kingdom",
+    "score": 95.8,
+    "academic": 99.9,
+    "employer": 99.4
+  },
+  {
+    "rank": 10,
+    "name": "California Institute of Technology (Caltech)",
+    "country": "United States of America",
+    "score": 94.3,
+    "academic": 98.3,
+    "employer": 99.2
+  },
+  {
+    "rank": 11,
+    "name": "The University of Hong Kong",
+    "country": "Hong Kong SAR, China",
+    "score": 94.2,
+    "academic": 99.3,
+    "employer": 82.5
+  },
+  {
+    "rank": 12,
+    "name": "Nanyang Technological University, Singapore (NTU Singapore)",
+    "country": "Singapore",
+    "score": 93.7,
+    "academic": 97.1,
+    "employer": 91.4
+  },
+  {
+    "rank": 13,
+    "name": "University of Chicago",
+    "country": "United States of America",
+    "score": 93,
+    "academic": 99.8,
+    "employer": 99.3
+  },
+  {
+    "rank": 14,
+    "name": "Peking University",
+    "country": "China (Mainland)",
+    "score": 92.6,
+    "academic": 99.9,
+    "employer": 99.6
+  },
+  {
+    "rank": 15,
+    "name": "University of Pennsylvania",
+    "country": "United States of America",
+    "score": 92.5,
+    "academic": 98.9,
+    "employer": 98.7
+  },
+  {
+    "rank": 16,
+    "name": "Cornell University",
+    "country": "United States of America",
+    "score": 91.6,
+    "academic": 99.5,
+    "employer": 98.8
+  },
+  {
+    "rank": 17,
+    "name": "Tsinghua University",
+    "country": "China (Mainland)",
+    "score": 91.2,
+    "academic": 99.9,
+    "employer": 99.7
+  },
+  {
+    "rank": 17,
+    "name": "University of California, Berkeley (UCB)",
+    "country": "United States of America",
+    "score": 91.2,
+    "academic": 100,
+    "employer": 100
+  },
+  {
+    "rank": 19,
+    "name": "The University of Melbourne",
+    "country": "Australia",
+    "score": 90.8,
+    "academic": 99.7,
+    "employer": 97.4
+  },
+  {
+    "rank": 20,
+    "name": "The University of New South Wales",
+    "country": "Australia",
+    "score": 90.7,
+    "academic": 96.3,
+    "employer": 93.5
+  },
+  {
+    "rank": 21,
+    "name": "Yale University",
+    "country": "United States of America",
+    "score": 90.4,
+    "academic": 100,
+    "employer": 100
+  },
+  {
+    "rank": 22,
+    "name": "École Polytechnique Fédérale de Lausanne",
+    "country": "Switzerland",
+    "score": 90.2,
+    "academic": 92.7,
+    "employer": 88
+  },
+  {
+    "rank": 22,
+    "name": "Technical University of Munich",
+    "country": "Germany",
+    "score": 90.2,
+    "academic": 92,
+    "employer": 99.7
+  },
+  {
+    "rank": 24,
+    "name": "Johns Hopkins University",
+    "country": "United States of America",
+    "score": 89.7,
+    "academic": 93.2,
+    "employer": 79.2
+  },
+  {
+    "rank": 25,
+    "name": "Princeton University",
+    "country": "United States of America",
+    "score": 89.4,
+    "academic": 100,
+    "employer": 99.8
+  },
+  {
+    "rank": 25,
+    "name": "The University of Sydney",
+    "country": "Australia",
+    "score": 89.4,
+    "academic": 98.9,
+    "employer": 94.2
+  },
+  {
+    "rank": 27,
+    "name": "McGill University",
+    "country": "Canada",
+    "score": 88.9,
+    "academic": 98.1,
+    "employer": 93.5
+  },
+  {
+    "rank": 28,
+    "name": "PSL University",
+    "country": "France",
+    "score": 88.6,
+    "academic": 82.6,
+    "employer": 98.5
+  },
+  {
+    "rank": 29,
+    "name": "University of Toronto",
+    "country": "Canada",
+    "score": 88.5,
+    "academic": 100,
+    "employer": 99.1
+  },
+  {
+    "rank": 30,
+    "name": "Fudan University",
+    "country": "China (Mainland)",
+    "score": 88.4,
+    "academic": 93.7,
+    "employer": 95.1
+  },
+  {
+    "rank": 31,
+    "name": "King's College London (KCL)",
+    "country": "United Kingdom",
+    "score": 88.3,
+    "academic": 96.2,
+    "employer": 91.8
+  },
+  {
+    "rank": 32,
+    "name": "Australian National University",
+    "country": "Australia",
+    "score": 87.4,
+    "academic": 97.9,
+    "employer": 82.6
+  },
+  {
+    "rank": 32,
+    "name": "The Chinese University of Hong Kong",
+    "country": "Hong Kong SAR, China",
+    "score": 87.4,
+    "academic": 94.2,
+    "employer": 67.3
+  },
+  {
+    "rank": 34,
+    "name": "University of Edinburgh",
+    "country": "United Kingdom",
+    "score": 87.2,
+    "academic": 99.6,
+    "employer": 98.2
+  },
+  {
+    "rank": 35,
+    "name": "The University of Manchester",
+    "country": "United Kingdom",
+    "score": 86.4,
+    "academic": 98.6,
+    "employer": 98.8
+  },
+  {
+    "rank": 36,
+    "name": "Monash University",
+    "country": "Australia",
+    "score": 85.8,
+    "academic": 95.7,
+    "employer": 87.5
+  },
+  {
+    "rank": 36,
+    "name": "The University of Tokyo",
+    "country": "Japan",
+    "score": 85.8,
+    "academic": 100,
+    "employer": 99.9
+  },
+  {
+    "rank": 38,
+    "name": "Columbia University",
+    "country": "United States of America",
+    "score": 85.6,
+    "academic": 99.9,
+    "employer": 99.9
+  },
+  {
+    "rank": 38,
+    "name": "Seoul National University",
+    "country": "Republic of Korea",
+    "score": 85.6,
+    "academic": 99.7,
+    "employer": 99.1
+  },
+  {
+    "rank": 40,
+    "name": "University of British Columbia",
+    "country": "Canada",
+    "score": 85.5,
+    "academic": 99.6,
+    "employer": 96.5
+  },
+  {
+    "rank": 41,
+    "name": "Institut Polytechnique de Paris",
+    "country": "France",
+    "score": 85.4,
+    "academic": 58.1,
+    "employer": 99.8
+  },
+  {
+    "rank": 42,
+    "name": "Northwestern University",
+    "country": "United States of America",
+    "score": 85.1,
+    "academic": 92.2,
+    "employer": 89.4
+  },
+  {
+    "rank": 42,
+    "name": "The University of Queensland",
+    "country": "Australia",
+    "score": 85.1,
+    "academic": 94.3,
+    "employer": 79.5
+  },
+  {
+    "rank": 44,
+    "name": "The Hong Kong University of Science and Technology",
+    "country": "Hong Kong SAR, China",
+    "score": 84.8,
+    "academic": 89.4,
+    "employer": 69.7
+  },
+  {
+    "rank": 45,
+    "name": "University of Michigan-Ann Arbor",
+    "country": "United States of America",
+    "score": 84.7,
+    "academic": 99.3,
+    "employer": 98.5
+  },
+  {
+    "rank": 46,
+    "name": "University of California, Los Angeles (UCLA)",
+    "country": "United States of America",
+    "score": 84.4,
+    "academic": 100,
+    "employer": 100
+  },
+  {
+    "rank": 47,
+    "name": "Delft University of Technology",
+    "country": "Netherlands",
+    "score": 84.3,
+    "academic": 86.2,
+    "employer": 90.4
+  },
+  {
+    "rank": 47,
+    "name": "Shanghai Jiao Tong University",
+    "country": "China (Mainland)",
+    "score": 84.3,
+    "academic": 92.7,
+    "employer": 93.8
+  },
+  {
+    "rank": 49,
+    "name": "Zhejiang University",
+    "country": "China (Mainland)",
+    "score": 84,
+    "academic": 87,
+    "employer": 97.2
+  },
+  {
+    "rank": 50,
+    "name": "Yonsei University",
+    "country": "Republic of Korea",
+    "score": 82.9,
+    "academic": 91.6,
+    "employer": 97.8
+  },
+  {
+    "rank": 51,
+    "name": "University of Bristol",
+    "country": "United Kingdom",
+    "score": 82.5,
+    "academic": 87.3,
+    "employer": 89.4
+  },
+  {
+    "rank": 52,
+    "name": "Carnegie Mellon University",
+    "country": "United States of America",
+    "score": 82.3,
+    "academic": 80.1,
+    "employer": 94.4
+  },
+  {
+    "rank": 53,
+    "name": "The University of Amsterdam",
+    "country": "Netherlands",
+    "score": 81.5,
+    "academic": 92.5,
+    "employer": 72.6
+  },
+  {
+    "rank": 54,
+    "name": "The Hong Kong Polytechnic University",
+    "country": "Hong Kong SAR, China",
+    "score": 81.2,
+    "academic": 81.2,
+    "employer": 47.5
+  },
+  {
+    "rank": 55,
+    "name": "New York University (NYU)",
+    "country": "United States of America",
+    "score": 81.1,
+    "academic": 98.6,
+    "employer": 99.9
+  },
+  {
+    "rank": 56,
+    "name": "London School of Economics and Political Science (LSE)",
+    "country": "United Kingdom",
+    "score": 80.5,
+    "academic": 80.6,
+    "employer": 99.4
+  },
+  {
+    "rank": 57,
+    "name": "Kyoto University",
+    "country": "Japan",
+    "score": 80.2,
+    "academic": 99.7,
+    "employer": 99.3
+  },
+  {
+    "rank": 58,
+    "name": "Ludwig-Maximilians-Universität München",
+    "country": "Germany",
+    "score": 80.1,
+    "academic": 97.1,
+    "employer": 95.5
+  },
+  {
+    "rank": 58,
+    "name": "Universiti Malaya (UM)",
+    "country": "Malaysia",
+    "score": 80.1,
+    "academic": 92.3,
+    "employer": 96.7
+  },
+  {
+    "rank": 60,
+    "name": "KU Leuven",
+    "country": "Belgium",
+    "score": 79.7,
+    "academic": 93,
+    "employer": 63.5
+  },
+  {
+    "rank": 61,
+    "name": "Korea University",
+    "country": "Republic of Korea",
+    "score": 79.6,
+    "academic": 89.2,
+    "employer": 95.4
+  },
+  {
+    "rank": 62,
+    "name": "Duke University",
+    "country": "United States of America",
+    "score": 79,
+    "academic": 92.9,
+    "employer": 91
+  },
+  {
+    "rank": 63,
+    "name": "City University of Hong Kong",
+    "country": "Hong Kong SAR, China",
+    "score": 78.9,
+    "academic": 75.5,
+    "employer": 46.7
+  },
+  {
+    "rank": 63,
+    "name": "National Taiwan University (NTU)",
+    "country": "Taiwan",
+    "score": 78.9,
+    "academic": 97.7,
+    "employer": 94.2
+  },
+  {
+    "rank": 65,
+    "name": "The University of Auckland",
+    "country": "New Zealand",
+    "score": 77.5,
+    "academic": 91.7,
+    "employer": 55.2
+  },
+  {
+    "rank": 66,
+    "name": "University of California, San Diego (UCSD)",
+    "country": "United States of America",
+    "score": 76.9,
+    "academic": 94,
+    "employer": 80.2
+  },
+  {
+    "rank": 67,
+    "name": "King Fahd University of Petroleum & Minerals",
+    "country": "Saudi Arabia",
+    "score": 76.5,
+    "academic": 53.5,
+    "employer": 75.6
+  },
+  {
+    "rank": 68,
+    "name": "University of Texas at Austin",
+    "country": "United States of America",
+    "score": 76.4,
+    "academic": 97.6,
+    "employer": 96.8
+  },
+  {
+    "rank": 69,
+    "name": "Brown University",
+    "country": "United States of America",
+    "score": 76.2,
+    "academic": 72.4,
+    "employer": 64.3
+  },
+  {
+    "rank": 70,
+    "name": "Université Paris-Saclay",
+    "country": "France",
+    "score": 75.9,
+    "academic": 75.3,
+    "employer": 99.4
+  },
+  {
+    "rank": 70,
+    "name": "University of Illinois at Urbana-Champaign",
+    "country": "United States of America",
+    "score": 75.9,
+    "academic": 91.7,
+    "employer": 91.5
+  },
+  {
+    "rank": 72,
+    "name": "Lund University",
+    "country": "Sweden",
+    "score": 75.7,
+    "academic": 80.1,
+    "employer": 64.1
+  },
+  {
+    "rank": 72,
+    "name": "Sorbonne University (merged from Paris IV & UPMC)",
+    "country": "France",
+    "score": 75.7,
+    "academic": 93.2,
+    "employer": 62.1
+  },
+  {
+    "rank": 74,
+    "name": "The University of Warwick",
+    "country": "United Kingdom",
+    "score": 75.2,
+    "academic": 82.7,
+    "employer": 93
+  },
+  {
+    "rank": 75,
+    "name": "Trinity College Dublin, The University of Dublin",
+    "country": "Ireland",
+    "score": 73.9,
+    "academic": 82.5,
+    "employer": 68.1
+  },
+  {
+    "rank": 76,
+    "name": "University of Birmingham",
+    "country": "United Kingdom",
+    "score": 73.8,
+    "academic": 81.1,
+    "employer": 75.7
+  },
+  {
+    "rank": 77,
+    "name": "The University of Western Australia",
+    "country": "Australia",
+    "score": 73.7,
+    "academic": 69,
+    "employer": 56.5
+  },
+  {
+    "rank": 78,
+    "name": "KTH Royal Institute of Technology",
+    "country": "Sweden",
+    "score": 73.6,
+    "academic": 60.2,
+    "employer": 62.1
+  },
+  {
+    "rank": 79,
+    "name": "University of Glasgow",
+    "country": "United Kingdom",
+    "score": 73.4,
+    "academic": 88.3,
+    "employer": 73.5
+  },
+  {
+    "rank": 80,
+    "name": "Ruprecht-Karls-Universität Heidelberg",
+    "country": "Germany",
+    "score": 73,
+    "academic": 87.1,
+    "employer": 72.2
+  },
+  {
+    "rank": 81,
+    "name": "University of Washington",
+    "country": "United States of America",
+    "score": 72.7,
+    "academic": 90.1,
+    "employer": 74.8
+  },
+  {
+    "rank": 82,
+    "name": "Adelaide University",
+    "country": "Australia",
+    "score": 72.6,
+    "academic": 78.3,
+    "employer": 62.7
+  },
+  {
+    "rank": 82,
+    "name": "Pennsylvania State University",
+    "country": "United States of America",
+    "score": 72.6,
+    "academic": 86.1,
+    "employer": 85.8
+  },
+  {
+    "rank": 84,
+    "name": "Universidad de Buenos Aires",
+    "country": "Argentina",
+    "score": 72.3,
+    "academic": 98.1,
+    "employer": 95.8
+  },
+  {
+    "rank": 85,
+    "name": "Tokyo Institute of Technology",
+    "country": "Japan",
+    "score": 72.1,
+    "academic": 85,
+    "employer": 95.7
+  },
+  {
+    "rank": 86,
+    "name": "University of Leeds",
+    "country": "United Kingdom",
+    "score": 72,
+    "academic": 81.8,
+    "employer": 82.1
+  },
+  {
+    "rank": 87,
+    "name": "University of Southampton",
+    "country": "United Kingdom",
+    "score": 71.2,
+    "academic": 62.6,
+    "employer": 55.9
+  },
+  {
+    "rank": 88,
+    "name": "Boston University",
+    "country": "United States of America",
+    "score": 71.1,
+    "academic": 75.3,
+    "employer": 86.7
+  },
+  {
+    "rank": 88,
+    "name": "Freie Universität Berlin",
+    "country": "Germany",
+    "score": 71.1,
+    "academic": 88.3,
+    "employer": 66.4
+  },
+  {
+    "rank": 88,
+    "name": "Purdue University",
+    "country": "United States of America",
+    "score": 71.1,
+    "academic": 74.3,
+    "employer": 92.7
+  },
+  {
+    "rank": 91,
+    "name": "The University of Osaka",
+    "country": "Japan",
+    "score": 71,
+    "academic": 90.5,
+    "employer": 90
+  },
+  {
+    "rank": 92,
+    "name": "The University of Sheffield",
+    "country": "United Kingdom",
+    "score": 70.9,
+    "academic": 73,
+    "employer": 61.7
+  },
+  {
+    "rank": 93,
+    "name": "Uppsala University",
+    "country": "Sweden",
+    "score": 70.3,
+    "academic": 74.7,
+    "employer": 48.1
+  },
+  {
+    "rank": 94,
+    "name": "Durham University",
+    "country": "United Kingdom",
+    "score": 70.1,
+    "academic": 74.1,
+    "employer": 91.9
+  },
+  {
+    "rank": 94,
+    "name": "University of Alberta",
+    "country": "Canada",
+    "score": 70.1,
+    "academic": 70.9,
+    "employer": 53
+  },
+  {
+    "rank": 96,
+    "name": "University of Technology Sydney",
+    "country": "Australia",
+    "score": 69.9,
+    "academic": 58.7,
+    "employer": 66.7
+  },
+  {
+    "rank": 97,
+    "name": "The University of Nottingham",
+    "country": "United Kingdom",
+    "score": 69.4,
+    "academic": 75.4,
+    "employer": 78.4
+  },
+  {
+    "rank": 98,
+    "name": "Karlsruhe Institute of Technology (KIT)",
+    "country": "Germany",
+    "score": 69.1,
+    "academic": 57.1,
+    "employer": 87.4
+  },
+  {
+    "rank": 98,
+    "name": "Politecnico di Milano",
+    "country": "Italy",
+    "score": 69.1,
+    "academic": 83.4,
+    "employer": 90.1
+  },
+  {
+    "rank": 100,
+    "name": "University of Zurich (UZH)",
+    "country": "Switzerland",
+    "score": 68.5,
+    "academic": 71,
+    "employer": 43.5
+  },
+  {
+    "rank": 101,
+    "name": "University of Copenhagen",
+    "country": "Denmark",
+    "score": 68.4,
+    "academic": 85.5,
+    "employer": 41.7
+  },
+  {
+    "rank": 102,
+    "name": "Pohang University of Science And Technology (POSTECH)",
+    "country": "Republic of Korea",
+    "score": 67.9,
+    "academic": 61.3,
+    "employer": 83.3
+  },
+  {
+    "rank": 103,
+    "name": "Nanjing University",
+    "country": "China (Mainland)",
+    "score": 67.7,
+    "academic": 72.1,
+    "employer": 61.2
+  },
+  {
+    "rank": 103,
+    "name": "Utrecht University",
+    "country": "Netherlands",
+    "score": 67.7,
+    "academic": 79.3,
+    "employer": 49.2
+  },
+  {
+    "rank": 105,
+    "name": "Lomonosov Moscow State University",
+    "country": "Russian Federation",
+    "score": 67.6,
+    "academic": 83.7,
+    "employer": 87.9
+  },
+  {
+    "rank": 105,
+    "name": "Rheinisch-Westfälische Technische Hochschule Aachen",
+    "country": "Germany",
+    "score": 67.6,
+    "academic": 57.7,
+    "employer": 95.7
+  },
+  {
+    "rank": 107,
+    "name": "Technical University of Denmark",
+    "country": "Denmark",
+    "score": 67.5,
+    "academic": 44.8,
+    "employer": 36.2
+  },
+  {
+    "rank": 108,
+    "name": "Universidade de São Paulo (USP)",
+    "country": "Brazil",
+    "score": 67.3,
+    "academic": 97.3,
+    "employer": 81
+  },
+  {
+    "rank": 109,
+    "name": "Tohoku University",
+    "country": "Japan",
+    "score": 66.7,
+    "academic": 84.5,
+    "employer": 86.5
+  },
+  {
+    "rank": 110,
+    "name": "Queen Mary University of London (QMUL)",
+    "country": "United Kingdom",
+    "score": 66.6,
+    "academic": 63.6,
+    "employer": 47.1
+  },
+  {
+    "rank": 110,
+    "name": "University of Wisconsin-Madison",
+    "country": "United States of America",
+    "score": 66.6,
+    "academic": 85.7,
+    "employer": 63.1
+  },
+  {
+    "rank": 112,
+    "name": "Qatar University",
+    "country": "Qatar",
+    "score": 66.5,
+    "academic": 43.3,
+    "employer": 56.5
+  },
+  {
+    "rank": 113,
+    "name": "University of St Andrews",
+    "country": "United Kingdom",
+    "score": 66.4,
+    "academic": 61.5,
+    "employer": 74.9
+  },
+  {
+    "rank": 114,
+    "name": "Aalto University",
+    "country": "Finland",
+    "score": 66.3,
+    "academic": 57.5,
+    "employer": 56.1
+  },
+  {
+    "rank": 114,
+    "name": "University of California, Davis",
+    "country": "United States of America",
+    "score": 66.3,
+    "academic": 72.7,
+    "employer": 70.1
+  },
+  {
+    "rank": 116,
+    "name": "Pontificia Universidad Católica de Chile",
+    "country": "Chile",
+    "score": 66.1,
+    "academic": 98,
+    "employer": 98.6
+  },
+  {
+    "rank": 116,
+    "name": "University of Helsinki",
+    "country": "Finland",
+    "score": 66.1,
+    "academic": 74.5,
+    "employer": 37.7
+  },
+  {
+    "rank": 118,
+    "name": "University College Dublin",
+    "country": "Ireland",
+    "score": 66,
+    "academic": 66.5,
+    "employer": 57.6
+  },
+  {
+    "rank": 119,
+    "name": "Leiden University",
+    "country": "Netherlands",
+    "score": 65.7,
+    "academic": 80.4,
+    "employer": 46.3
+  },
+  {
+    "rank": 119,
+    "name": "Rice University",
+    "country": "United States of America",
+    "score": 65.7,
+    "academic": 50.6,
+    "employer": 51
+  },
+  {
+    "rank": 119,
+    "name": "University of Oslo",
+    "country": "Norway",
+    "score": 65.7,
+    "academic": 67.8,
+    "employer": 27.7
+  },
+  {
+    "rank": 119,
+    "name": "University of Waterloo",
+    "country": "Canada",
+    "score": 65.7,
+    "academic": 53,
+    "employer": 74.2
+  },
+  {
+    "rank": 123,
+    "name": "Georgia Institute of Technology",
+    "country": "United States of America",
+    "score": 65.5,
+    "academic": 76,
+    "employer": 92.8
+  },
+  {
+    "rank": 123,
+    "name": "Indian Institute of Technology Delhi (IITD)",
+    "country": "India",
+    "score": 65.5,
+    "academic": 67.9,
+    "employer": 95
+  },
+  {
+    "rank": 125,
+    "name": "RMIT University",
+    "country": "Australia",
+    "score": 65.3,
+    "academic": 55.1,
+    "employer": 60.3
+  },
+  {
+    "rank": 126,
+    "name": "Sungkyunkwan University",
+    "country": "Republic of Korea",
+    "score": 65.2,
+    "academic": 68.4,
+    "employer": 75.6
+  },
+  {
+    "rank": 126,
+    "name": "Universiti Kebangsaan Malaysia (UKM)",
+    "country": "Malaysia",
+    "score": 65.2,
+    "academic": 76.2,
+    "employer": 76.4
+  },
+  {
+    "rank": 128,
+    "name": "Sapienza University of Rome",
+    "country": "Italy",
+    "score": 64.9,
+    "academic": 90.7,
+    "employer": 66.4
+  },
+  {
+    "rank": 129,
+    "name": "Indian Institute of Technology Bombay (IITB)",
+    "country": "India",
+    "score": 64.8,
+    "academic": 73.3,
+    "employer": 96.7
+  },
+  {
+    "rank": 130,
+    "name": "Humboldt-Universität zu Berlin",
+    "country": "Germany",
+    "score": 64.5,
+    "academic": 94.3,
+    "employer": 75.3
+  },
+  {
+    "rank": 131,
+    "name": "Aarhus University",
+    "country": "Denmark",
+    "score": 64.3,
+    "academic": 68.3,
+    "employer": 41.7
+  },
+  {
+    "rank": 132,
+    "name": "University of Bath",
+    "country": "United Kingdom",
+    "score": 64.2,
+    "academic": 48.9,
+    "employer": 81.6
+  },
+  {
+    "rank": 132,
+    "name": "University of Science and Technology of China",
+    "country": "China (Mainland)",
+    "score": 64.2,
+    "academic": 57.6,
+    "employer": 50.6
+  },
+  {
+    "rank": 134,
+    "name": "Universiti Putra Malaysia (UPM)",
+    "country": "Malaysia",
+    "score": 64.1,
+    "academic": 75.7,
+    "employer": 73.4
+  },
+  {
+    "rank": 134,
+    "name": "Universiti Sains Malaysia (USM)",
+    "country": "Malaysia",
+    "score": 64.1,
+    "academic": 77.6,
+    "employer": 79.8
+  },
+  {
+    "rank": 136,
+    "name": "Universidad Nacional Autónoma de México (UNAM)",
+    "country": "Mexico",
+    "score": 64,
+    "academic": 99.2,
+    "employer": 95.9
+  },
+  {
+    "rank": 137,
+    "name": "Newcastle University",
+    "country": "United Kingdom",
+    "score": 63.9,
+    "academic": 62.9,
+    "employer": 68.7
+  },
+  {
+    "rank": 138,
+    "name": "Alma Mater Studiorum - University of Bologna",
+    "country": "Italy",
+    "score": 63.3,
+    "academic": 90.6,
+    "employer": 67.5
+  },
+  {
+    "rank": 138,
+    "name": "Macquarie University",
+    "country": "Australia",
+    "score": 63.3,
+    "academic": 47.7,
+    "employer": 56.7
+  },
+  {
+    "rank": 140,
+    "name": "Eindhoven University of Technology",
+    "country": "Netherlands",
+    "score": 63.2,
+    "academic": 40.5,
+    "employer": 77.3
+  },
+  {
+    "rank": 140,
+    "name": "Erasmus University Rotterdam",
+    "country": "Netherlands",
+    "score": 63.2,
+    "academic": 49.4,
+    "employer": 74.8
+  },
+  {
+    "rank": 140,
+    "name": "University of North Carolina, Chapel Hill",
+    "country": "United States of America",
+    "score": 63.2,
+    "academic": 72.2,
+    "employer": 55.5
+  },
+  {
+    "rank": 143,
+    "name": "King Saud University",
+    "country": "Saudi Arabia",
+    "score": 63.1,
+    "academic": 54.8,
+    "employer": 57.7
+  },
+  {
+    "rank": 144,
+    "name": "Texas A&M University",
+    "country": "United States of America",
+    "score": 63,
+    "academic": 72.9,
+    "employer": 81.5
+  },
+  {
+    "rank": 145,
+    "name": "Technische Universität Berlin",
+    "country": "Germany",
+    "score": 62.8,
+    "academic": 64.6,
+    "employer": 79.4
+  },
+  {
+    "rank": 146,
+    "name": "University of Southern California",
+    "country": "United States of America",
+    "score": 62.6,
+    "academic": 61.2,
+    "employer": 69.6
+  },
+  {
+    "rank": 147,
+    "name": "Stockholm University",
+    "country": "Sweden",
+    "score": 62.5,
+    "academic": 65.1,
+    "employer": 29.5
+  },
+  {
+    "rank": 147,
+    "name": "University of Groningen",
+    "country": "Netherlands",
+    "score": 62.5,
+    "academic": 67.2,
+    "employer": 41.6
+  },
+  {
+    "rank": 147,
+    "name": "University of Liverpool",
+    "country": "United Kingdom",
+    "score": 62.5,
+    "academic": 60.7,
+    "employer": 48.8
+  },
+  {
+    "rank": 150,
+    "name": "University of Cape Town",
+    "country": "South Africa",
+    "score": 62.3,
+    "academic": 58.2,
+    "employer": 62.3
+  }
+]
