@@ -15,14 +15,10 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface AdminDashboardProps {
   onClose: () => void;
-  onImpersonateRole?: (role: 'teacher' | 'student' | null) => void;
-  impersonatedRole?: string | null;
 }
 
 export const AdminDashboard: React.FC<AdminDashboardProps> = ({ 
-  onClose, 
-  onImpersonateRole, 
-  impersonatedRole 
+  onClose 
 }) => {
   const [activeTab, setActiveTab] = useState<'overview' | 'students' | 'teachers' | 'classes'>('overview');
   const [users, setUsers] = useState<any[]>([]);
@@ -367,40 +363,6 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({
           </div>
 
           <div className="flex items-center gap-2">
-            {onImpersonateRole && (
-              <div className="hidden md:flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-xl border border-white/10 text-xs">
-                <span className="text-slate-300">Góc nhìn:</span>
-                <button
-                  onClick={() => onImpersonateRole(impersonatedRole === 'teacher' ? null : 'teacher')}
-                  className={`px-2 py-0.5 rounded-md font-bold transition-all ${
-                    impersonatedRole === 'teacher' 
-                      ? 'bg-violet-500 text-white' 
-                      : 'hover:bg-white/10 text-slate-200'
-                  }`}
-                >
-                  Giáo viên
-                </button>
-                <button
-                  onClick={() => onImpersonateRole(impersonatedRole === 'student' ? null : 'student')}
-                  className={`px-2 py-0.5 rounded-md font-bold transition-all ${
-                    impersonatedRole === 'student' 
-                      ? 'bg-indigo-500 text-white' 
-                      : 'hover:bg-white/10 text-slate-200'
-                  }`}
-                >
-                  Học sinh
-                </button>
-                {impersonatedRole && (
-                  <button
-                    onClick={() => onImpersonateRole(null)}
-                    className="px-2 py-0.5 bg-amber-400 text-slate-950 rounded-md font-bold hover:bg-amber-300 ml-1"
-                  >
-                    Về Admin
-                  </button>
-                )}
-              </div>
-            )}
-
             <button 
               onClick={onClose}
               className="p-2 text-slate-400 hover:text-white hover:bg-white/10 rounded-full transition-all"

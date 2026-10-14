@@ -2309,7 +2309,6 @@ export default function App() {
   const [showStats, setShowStats] = useState(false);
   const [showClassManagement, setShowClassManagement] = useState(false);
   const [showAdminDashboard, setShowAdminDashboard] = useState(false);
-  const [impersonatedRole, setImpersonatedRole] = useState<'teacher' | 'student' | null>(null);
   const [showLogin, setShowLogin] = useState(false);
   const [showProfile, setShowProfile] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -2324,7 +2323,7 @@ export default function App() {
   const [classToDelete, setClassToDelete] = useState<any | null>(null);
   const [isDeletingClass, setIsDeletingClass] = useState(false);
 
-  const effectiveRole = impersonatedRole || userRole;
+  const effectiveRole = userRole;
 
   const handleDeleteClass = async () => {
     if (!classToDelete || !auth.currentUser) return;
@@ -3263,22 +3262,6 @@ export default function App() {
         </AnimatePresence>
       </header>
 
-      {/* Admin Impersonation Notice Bar */}
-      {impersonatedRole && (
-        <div className="bg-amber-400 text-slate-950 px-4 py-2 text-xs font-bold flex items-center justify-between shadow-md z-40 sticky top-0">
-          <div className="flex items-center gap-2">
-            <Crown className="w-4 h-4 text-slate-950" />
-            <span>Đang xem hệ thống với tư cách: <strong className="uppercase">{impersonatedRole === 'teacher' ? 'Giáo viên' : 'Học sinh'}</strong> (Chế độ giả lập Admin)</span>
-          </div>
-          <button 
-            onClick={() => setImpersonatedRole(null)}
-            className="px-3 py-1 bg-slate-900 text-white rounded-lg text-[11px] font-black hover:bg-slate-800 transition-all shadow-sm"
-          >
-            Quay lại Admin Toàn Năng
-          </button>
-        </div>
-      )}
-
       <AnimatePresence>
         {showLogin && (
           <LoginModal 
@@ -3313,8 +3296,6 @@ export default function App() {
         {showAdminDashboard && (
           <AdminDashboard 
             onClose={() => setShowAdminDashboard(false)} 
-            onImpersonateRole={(role) => setImpersonatedRole(role)}
-            impersonatedRole={impersonatedRole}
           />
         )}
       </AnimatePresence>
