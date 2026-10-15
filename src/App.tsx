@@ -1648,9 +1648,7 @@ const LoginModal = ({ isOpen, onClose, onLogin }: { isOpen: boolean, onClose: ()
     const isAdminAccount = 
       rawInput.toLowerCase() === 'juzjackie' || 
       rawInput.toLowerCase() === 'juzjackie.admin@gmail.com' ||
-      rawInput.toLowerCase() === 'juzjackie@admin.com' ||
-      rawInput.toLowerCase() === 'juzerik15@gmail.com' ||
-      selectedRole === 'admin';
+      rawInput.toLowerCase() === 'juzjackie@admin.com';
 
     if (!selectedRole && !isAdminAccount) {
       setAuthError("Vui lòng chọn vai trò trước khi tiếp tục.");
@@ -1737,10 +1735,18 @@ const LoginModal = ({ isOpen, onClose, onLogin }: { isOpen: boolean, onClose: ()
         let userSnap = await getDoc(userRef);
         const existingData = userSnap.exists() ? userSnap.data() : null;
         
+        // CHECK IF ACCOUNT HAS BEEN LOCKED / BANNED
+        if (existingData?.isBanned) {
+          await signOut(auth);
+          setAuthError("Tài khoản của bạn đã bị khoá.");
+          setIsLoading(false);
+          return;
+        }
+
         const isUserAdmin = 
           isAdminAccount || 
-          user.email?.toLowerCase().includes('juzjackie') || 
-          user.email === 'juzerik15@gmail.com' ||
+          user.email?.toLowerCase() === 'juzjackie.admin@gmail.com' || 
+          user.email?.toLowerCase() === 'juzjackie@admin.com' ||
           existingData?.role === 'admin';
 
         if (isUserAdmin) {
@@ -1805,14 +1811,22 @@ const LoginModal = ({ isOpen, onClose, onLogin }: { isOpen: boolean, onClose: ()
 
       const userRef = doc(db, 'users', user.uid);
       let userSnap = await getDoc(userRef);
+      const existingData = userSnap.exists() ? userSnap.data() : null;
+
+      // Check if account has been locked / banned
+      if (existingData?.isBanned) {
+        await signOut(auth);
+        setAuthError("Tài khoản của bạn đã bị khoá.");
+        setIsLoading(false);
+        return;
+      }
       
       let roleToUse: string = selectedRole;
       let userCode = null;
 
-      if (userSnap.exists()) {
-        const data = userSnap.data();
-        if (data.role) roleToUse = data.role;
-        userCode = data.userCode;
+      if (existingData) {
+        if (existingData.role) roleToUse = existingData.role;
+        userCode = existingData.userCode;
       }
 
       if (!userCode) {
@@ -2316,6 +2330,7 @@ export default function App() {
   const [userEmail, setUserEmail] = useState('');
   const [userRole, setUserRole] = useState<string | null>(null);
   const [currentUserData, setCurrentUserData] = useState<any>(null);
+  const [bannedModalMessage, setBannedModalMessage] = useState<string | null>(null);
   const [pendingInvites, setPendingInvites] = useState<any[]>([]);
   const [teacherInvites, setTeacherInvites] = useState<any[]>([]);
   const [teacherClasses, setTeacherClasses] = useState<any[]>([]);
@@ -2616,13 +2631,13 @@ export default function App() {
     if (isLoggedIn && currentUserData && auth.currentUser) {
       // Check for ban status
       if (currentUserData.isBanned) {
-        alert("Tài khoản của bạn đã bị chặn. Vui lòng liên hệ quản trị viên.");
+        setBannedModalMessage("Tài khoản của bạn đã bị khoá.");
         handleLogout();
         return;
       }
 
       // Ensure admin account always has admin role and AD code
-      const isAdminEmail = auth.currentUser.email === 'juzjackie.admin@gmail.com' || auth.currentUser.email === 'juzjackie@admin.com' || auth.currentUser.email === 'juzerik15@gmail.com' || auth.currentUser.email?.toLowerCase().includes('juzjackie');
+      const isAdminEmail = auth.currentUser.email === 'juzjackie.admin@gmail.com' || auth.currentUser.email === 'juzjackie@admin.com';
       const needsFix = !currentUserData.userCode || (isAdminEmail && currentUserData.role !== 'admin');
 
       if (needsFix) {
@@ -3297,6 +3312,32 @@ export default function App() {
           <AdminDashboard 
             onClose={() => setShowAdminDashboard(false)} 
           />
+        )}
+
+        {bannedModalMessage && (
+          <div className="fixed inset-0 z-[300] bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-white rounded-3xl p-6 sm:p-8 max-w-md w-full shadow-2xl border border-rose-100 text-center relative"
+            >
+              <div className="w-16 h-16 rounded-2xl bg-rose-100 text-rose-600 mx-auto mb-4 flex items-center justify-center shadow-lg shadow-rose-200">
+                <Lock className="w-8 h-8" />
+              </div>
+              <h3 className="text-xl font-black text-slate-900 mb-2">{bannedModalMessage}</h3>
+              <p className="text-slate-600 text-sm mb-6 leading-relaxed">
+                Tài khoản này đã bị khoá bởi Quản trị viên. Bạn không thể truy cập vào hệ thống bằng tài khoản này.
+              </p>
+              <button
+                type="button"
+                onClick={() => setBannedModalMessage(null)}
+                className="w-full py-3.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl font-bold text-sm transition-all shadow-md shadow-rose-200"
+              >
+                Đã hiểu
+              </button>
+            </motion.div>
+          </div>
         )}
       </AnimatePresence>
 
